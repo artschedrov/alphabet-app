@@ -3,10 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { RecognizeComponent } from './user-layout/components/recognize/recognize.component';
+import { CanvasComponent } from './user-layout/components/canvas/canvas.component';
+import { MenuComponent } from './user-layout/components/menu/menu.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RecognizeComponent,
+    CanvasComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

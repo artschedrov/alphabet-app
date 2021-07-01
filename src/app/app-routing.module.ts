@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MenuComponent } from './user-layout/components/menu/menu.component';
+import { AppComponent } from './app.component';
 
 const routes: Routes = [
   {
-    path: '', component: MenuComponent, children: [
+    path: '', component: AppComponent, children: [
       { path: '', redirectTo: '/menu', pathMatch: 'full'}
     ]
   },

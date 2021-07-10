@@ -2,12 +2,12 @@
 
 <div class="board">
   <div class="tools">
-    <button>Pen</button>
+    <button (click)='setSelection("line"); addShape("line"); erase = false'>Pen</button>
     <button>Undo</button>
-    <button>Erase</button>
+    <button (click)='clearSelection(); setSelection("erase"); erase = true'>Erase</button>
     <button>Clear</button>
     <button>Save to file</button>
   </div>
-  <div class="board__field">Board</div>
+  <div class="board__field" id="container">Board</div>
 </div>
 <button [routerLink]="['/menu']">Back to menu</button>

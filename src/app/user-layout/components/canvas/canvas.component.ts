@@ -37,8 +37,8 @@ export class CanvasComponent implements OnInit {
     let height = window.innerHeight;
     this.stage = new Konva.Stage({
       container: 'container',
-      width: 500,
-      height: 500
+      width: 830,
+      height: 590
     });
     this.layer = new Konva.Layer();
     this.stage.add(this.layer);
@@ -106,6 +106,10 @@ export class CanvasComponent implements OnInit {
     Object.keys(this.selectedButton).forEach(key => {
       this.selectedButton[key] = false;
     })
+  }
+
+  clearBoard() {
+    location.reload();
   }
 
 }

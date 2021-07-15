@@ -1,11 +1,28 @@
+.room__container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
 .board {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   &__field {
-    background: blanchedalmond;
+    background: #638D62;
+    width: 830px;
+    border: 20px solid #B55A19;
+    border-radius: 10px;
   }
 }
 
-.tools {
-  display: flex;
-  flex-direction: column;
+.advicer {
+  width: 130px;
+  margin-left: 100px;
+  &__message {
+    background-color: blanchedalmond;
+  }
+  &__img {
+    width: 100%;
+  }
 }

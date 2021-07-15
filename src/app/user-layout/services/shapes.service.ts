@@ -13,7 +13,7 @@ export class ShapeService {
       x: 100,
       y: 100,
       radius: 70,
-      stroke: 'black',
+      stroke: 'white',
       strokeWidth: 2,
       draggable: true
     });
@@ -21,7 +21,7 @@ export class ShapeService {
 
   line(pos: any, mode: string = 'brush') {
     return new Konva.Line({
-      stroke: 'black',
+      stroke: 'white',
       strokeWidth: 10,
       globalCompositeOperation:
         mode === 'brush' ? 'source-over' : 'destination-out',

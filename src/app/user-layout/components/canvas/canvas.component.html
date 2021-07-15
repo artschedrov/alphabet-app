@@ -1,13 +1,16 @@
-<p>canvas works!</p>
-
-<div class="board">
-  <div class="tools">
-    <button (click)='setSelection("line"); addShape("line"); erase = false'>Pen</button>
-    <button>Undo</button>
-    <button (click)='clearSelection(); setSelection("erase"); erase = true'>Erase</button>
-    <button>Clear</button>
-    <button>Save to file</button>
+<div class="room__container">
+  <div class="board">
+    <div class="board__field" id="container">Board</div>
+    <div class="tools">
+      <button (click)='setSelection("line"); addShape("line"); erase = false'>Pen</button>
+      <button (click)='clearBoard()'>Clear</button>
+    </div>
   </div>
-  <div class="board__field" id="container">Board</div>
+  <div class="advicer">
+    <div class="advicer__message">
+      <p>Напиши букву а я ее проверю</p>
+    </div>
+    <img class="advicer__img" src="../../../../assets/advicer.png" alt="">
+  </div>
 </div>
 <button [routerLink]="['/menu']">Back to menu</button>
